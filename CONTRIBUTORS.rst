@@ -1,1 +1,1 @@
-- boulch, christophe.boulanger@imio.be
+- IMIO Team, support@imio.be
