@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+    <!-- put this template as layout properties on an object ! -->
+    <metal:javascriptslot fill-slot="javascript_head_slot">
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+      <script type="text/javascript" src="jquery.js"></script>
+    </metal:javascriptslot>
+    <div id="cirkwi-container" metal:fill-slot="main" tal:define="myurl context/absolute_url;
+                                            cdf_parametres_client_sans_url view/cdf_parametres;
+                                            cdf_parametres_client python:'cdf_url:%s,%s'%(myurl,cdf_parametres_client_sans_url);
+                                            ext_method_name string:cdf_module_cirkwi.php">
+        <metal:main-macro define-macro="main">
+          <div tal:condition="not:cdf_parametres_client_sans_url">
+              <p style="font-weight:bold;">Vous devez créer une propriété dans la ZMI (sur le dossier affichant les circuits):</p>
+              <ul><li>Nom de la propriété: cdf_parametres</li>
+                  <li>Type : string</li>
+                  <li>Valeur : cdf_id_host:999,cdf_id_outil:999,cdf_lang:fr (les deux chiffres mentionnés sont trouvés dans votre configuration de cirkwi.com)</li>
+              </ul>
+          </div>
+          <div id="circuits">
+            <p tal:content="structure python:view.getpage(cdf_parametres_client=cdf_parametres_client, em_name=ext_method_name)"/>
+          </div>
+        </metal:main-macro>
+
+    </div>
+</body>
+</html>
