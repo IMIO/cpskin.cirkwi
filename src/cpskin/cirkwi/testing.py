@@ -6,6 +6,7 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
+from plone import api
 
 import cpskin.cirkwi
 
@@ -19,7 +20,8 @@ class CpskinCirkwiLayer(PloneSandboxLayer):
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'cpskin.cirkwi:default')
-
+        api.user.create(email='test@imio.be', username='test')
+        api.user.grant_roles(username='test', roles=['Site Administrator'])
 
 CPSKIN_CIRKWI_FIXTURE = CpskinCirkwiLayer()
 
