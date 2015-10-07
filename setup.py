@@ -42,12 +42,13 @@ setup(
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
+    #    'cpskin.locales',
+    #    'cpskin.core',
     install_requires=[
-        'setuptools',
         'plone.api',
+        'plone.app.dexterity',
         'plone',
-        'cpskin.locales',
-        'cpskin.core',
+        'setuptools',
     ],
     extras_require={
         'test': [
