@@ -24,25 +24,7 @@
   <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema"></property>
- <property
-    name="model_source">&lt;model xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-    &lt;schema&gt;
-      &lt;field name="cdf_host" type="zope.schema.TextLine"&gt;
-        &lt;description/&gt;
-        &lt;title&gt;cdf_host&lt;/title&gt;
-      &lt;/field&gt;
-      &lt;field name="cdf_outils" type="zope.schema.TextLine"&gt;
-        &lt;description/&gt;
-        &lt;title&gt;cdf_outils&lt;/title&gt;
-      &lt;/field&gt;
-      &lt;field name="cdf_lang" type="zope.schema.TextLine"&gt;
-        &lt;description/&gt;
-        &lt;required&gt;False&lt;/required&gt;
-        &lt;title&gt;cdf_lang&lt;/title&gt;
-      &lt;/field&gt;
-    &lt;/schema&gt;
-  &lt;/model&gt;</property>
+ <property name="schema">cpskin.cirkwi.interfaces.ICirkwi</property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
  <alias from="(Default)" to="(dynamic view)"/>
