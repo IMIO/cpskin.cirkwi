@@ -9,8 +9,6 @@
 
   <i18n:registerTranslations directory="locales" />
 
-  <include package="cpskin.locales"/>
-  <include package="cpskin.core" />
   <include package=".browser" />
 
 
