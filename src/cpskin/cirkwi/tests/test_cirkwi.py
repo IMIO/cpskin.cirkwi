@@ -16,6 +16,7 @@ import unittest2 as unittest
 class CirkwiIntegrationTest(unittest.TestCase):
 
     layer = CPSKIN_CIRKWI_INTEGRATION_TESTING
+    cirkwi = None
 
     def _createCirkwi(self, title, desc, cdf_host="3249", cdf_outils="570", cdf_lang="fr"):
         """Method to create a cirkwi"""
@@ -66,3 +67,9 @@ class CirkwiIntegrationTest(unittest.TestCase):
         factory = fti.factory
         obj = createObject(factory)
         self.assertTrue(ICirkwi.providedBy(obj))
+
+    def test_adding(self):
+        self.portal.invokeFactory('cirkwi', 'cirkwi1')
+        c1 = self.portal['cirkwi1']
+        self.assertTrue(ICirkwi.providedBy(c1))
+
