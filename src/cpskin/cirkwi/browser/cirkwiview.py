@@ -6,8 +6,6 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 class CirkwiView(BrowserView):
     index = ViewPageTemplateFile("cirkwiview.pt")
-    cdf_parametres_client = ''
-    em_name = ''
 
     def render(self):
         return self.index()
