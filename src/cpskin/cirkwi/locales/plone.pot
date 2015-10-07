@@ -15,17 +15,13 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: cpskin.cirkwi\n"
+"Domain: plone\n"
 
-#: ../interfaces.py:19
-msgid "cdf_host"
+#: ../profiles/default/types/cirkwi.xml
+msgid "Products to configure a cirkwi page."
 msgstr ""
 
-#: ../interfaces.py:29
-msgid "cdf_lang"
-msgstr ""
-
-#: ../interfaces.py:24
-msgid "cdf_outils"
+#: ../profiles/default/types/cirkwi.xml
+msgid "cirkwi"
 msgstr ""
 
