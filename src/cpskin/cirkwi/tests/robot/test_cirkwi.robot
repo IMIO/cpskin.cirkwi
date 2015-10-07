@@ -25,10 +25,8 @@
 
 Resource  plone/app/robotframework/selenium.robot
 Resource  plone/app/robotframework/keywords.robot
-Resource  Selenium2Screenshots/keywords.robot
 
 Library  Remote  ${PLONE_URL}/RobotRemote
-Library  Selenium2Screenshots
 
 Test Setup  Test Setup
 Test Teardown  Close all browsers
