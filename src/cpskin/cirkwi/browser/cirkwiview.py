@@ -3,6 +3,8 @@ import urllib2
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+from cpskin.cirkwi import _
+
 
 class CirkwiView(BrowserView):
     index = ViewPageTemplateFile("cirkwiview.pt")
@@ -48,7 +50,8 @@ class CirkwiView(BrowserView):
             data = data.replace('href="page.php?',
                                 'target="_blank" href="http://www.circuits-de-belgique.be/page.php?')
             if data == '2':
-                raise Exception('Look at your host id!')
+                error = _(u"Look at your host id!")
+                raise Exception(error)
             return data
         except Exception, msg:
-            return("Cannot open url '%s': %s" % (cdf_url, msg))
+            return _(u"Cannot open url '%s': %s" % (cdf_url, msg))

@@ -13,13 +13,6 @@
                                             cdf_parametres_client python:'cdf_url:%s,%s'%(myurl,cdf_parametres_client_sans_url);
                                             page_name string:cdf_module_cirkwi.php">
         <metal:main-macro define-macro="main">
-          <div tal:condition="not:cdf_parametres_client_sans_url">
-              <p style="font-weight:bold;">Vous devez créer une propriété dans la ZMI (sur le dossier affichant les circuits):</p>
-              <ul><li>Nom de la propriété: cdf_parametres</li>
-                  <li>Type : string</li>
-                  <li>Valeur : cdf_id_host:999,cdf_id_outil:999,cdf_lang:fr (les deux chiffres mentionnés sont trouvés dans votre configuration de cirkwi.com)</li>
-              </ul>
-          </div>
           <div id="circuits">
             <p tal:content="structure python:view.getpage(cdf_parametres_client=cdf_parametres_client, em_name=page_name)"/>
           </div>
