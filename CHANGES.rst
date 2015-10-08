@@ -5,7 +5,7 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Forget pdb in precedent release... -_-'
 
 
 1.0.1 (2015-10-08)
