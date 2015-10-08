@@ -10,7 +10,7 @@
                                             page_name string:cdf_module_cirkwi.php">
         <metal:main-macro define-macro="main">
           <div id="circuits">
-            <p tal:content="structure python:view.getpage(cdf_parametres_client=cdf_parametres_client, em_name=page_name)"/>
+            <p tal:replace="structure python:view.getpage(cdf_parametres_client=cdf_parametres_client, em_name=page_name)"/>
           </div>
         </metal:main-macro>
     </div>

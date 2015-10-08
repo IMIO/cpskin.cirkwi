@@ -49,7 +49,6 @@ class CirkwiView(BrowserView):
                                 'target="_blank" href="http://www.circuits-de-belgique.be/page_membre.php?')
             data = data.replace('href="page.php?',
                                 'target="_blank" href="http://www.circuits-de-belgique.be/page.php?')
-            import ipdb;ipdb.set_trace()
             if data == '2':
                 error = _(u"Look at your host id!")
                 raise Exception(error)
