@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,15 +12,15 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: cpskin.cirkwi\n"
+"Domain: DOMAIN\n"
 
 #: ../browser/cirkwiview.py:57
 msgid "Cannot open url '%s': %s"
-msgstr ""
+msgstr "Impossible d'ouvrir l'url '%s': %s"
 
 #: ../browser/cirkwiview.py:53
 msgid "Look at your host id!"
-msgstr ""
+msgstr "Vérifiez l'identifiant host!"
 
 #: ../interfaces.py:19
 msgid "cdf_host"
