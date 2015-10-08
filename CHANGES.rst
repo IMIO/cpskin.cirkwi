@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2015-10-08)
 ------------------
 
 - brower\cirkwiview.py : getpage : patch "return data" with a good escape sequence in data string document.writer(... <\/script>") code.
