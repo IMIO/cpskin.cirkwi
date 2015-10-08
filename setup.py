@@ -19,7 +19,7 @@ long_description = (
 
 setup(
     name='cpskin.cirkwi',
-    version='1.0.2.dev0',
+    version='1.0.2',
     description="New product with a specific view for cirkwi - http://outil.cirkwi.com",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers

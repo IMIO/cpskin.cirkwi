@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2015-10-08)
 ------------------
 
 - Forget pdb in precedent release... -_-'
